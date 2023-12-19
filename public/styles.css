@@ -1,0 +1,394 @@
+body{
+    background-color: #001F43;
+    border-image-repeat: stretch;
+}
+
+.homeBg{
+    background-image: url("./Background.png");
+}
+
+/*--------------------------- HOME PAGE ---------------------------*/
+.title{
+    position: absolute;
+    width: 619px;
+    height: 480px;
+    left: 531px;
+    top: 85px;
+    font-family: 'Luckiest Guy';
+    font-size: 114px;
+    line-height: 114px;
+    display: flex;
+    text-align: center;
+
+    color: #FFD702;
+}
+
+
+/* T */
+#T{
+position: absolute;
+width: 464px;
+height: 443px;
+left: calc(50% - 464px/2 - 57px);
+top: 85px;
+
+font-family: 'Luxurious Roman';
+font-size: 400px;
+display: flex;
+}
+
+/* IC */
+#ic{
+    position: absolute;
+    width: 369px;
+    height: 87px;
+    left: calc(50% - 369px/2 + 20.5px);
+    top: -10px;
+}
+
+
+/* AC */
+#ac{
+position: absolute;
+width: 369px;
+height: 87px;
+left: calc(50% - 369px/2 - 60px);
+top: 90px;
+}
+
+
+/* OE */
+#oe{
+position: absolute;
+width: 369px;
+height: 87px;
+left: calc(50% - 369px/2 - 30px);
+top: 185px;
+}
+
+
+/* Adventures */
+#adventures{
+position: absolute;
+width: 369px;
+height: 87px;
+left: calc(50% - 369px/2 - 100px);
+top: 280px;
+font-size: 55px;
+}
+
+/*---- New Game Button ----*/
+
+#newGameButton{
+
+    position: absolute;
+    width: 360px;
+    height: 146px;
+    left: calc(50% - 480px/2 + 60px);
+    top: 506px;
+
+    background: #FFD702;
+    border-width: 0px 2px 2px 0px solid;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    font-family: 'Joti One';
+    font-size: 65px;
+
+    color: #FFFFFF;
+}
+
+#newGameButton:hover{
+    width: 380px;
+    height: 166px;
+    left: calc(50% - 480px/2 + 50px);
+    top: 496px;
+}
+
+/*--------------------------- PLAYER PAGE ---------------------------*/
+
+
+/* PlayerPage */
+#playerPage{
+position: absolute;
+width: 0px; /* 949px */
+height: 0px; /* 567px */
+left: calc(50% - 949px/2 + 0.5px);
+top: calc(50% - 567px/2 - 0.5px);
+opacity: 0;
+
+background: #FFD702;
+border-width: 0px 2px 2px 0px;
+border-style: solid;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+border-radius: 30px;
+transition: all 1s;
+    
+}
+
+#playerToHome{
+    /* X */
+
+    position: absolute;
+    width: 174px;
+    height: 52px;
+    left: 600px;
+    bottom: 420px;
+    
+
+    background: #00D3B9;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+
+    /* BACK! */
+    font-family: 'Joti One';
+    font-size: 36px;
+    align-items: right;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#playerToHome:hover{
+    width: 184px;
+    height: 62px;
+    left: 595px;
+    bottom: 415px;
+}
+
+.playerContent{
+    /* Rectangle 16 */
+
+box-sizing: border-box;
+
+
+position: absolute;
+width: 812px;
+height: 454px;
+left: calc(50% - 812px/2);
+top: 79px;
+font-family: 'Joti One';
+font-size: 46px;
+align-items: center;
+text-align: center;
+}
+
+/* Begin Button */
+.startButton{
+    position: absolute;
+    width: 314px;
+    height: 72px;
+    left: calc(50% - 314px/2);
+    top: calc(50% - 72px/2 + 186px);
+
+    background: #00D3B9;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+
+    /* BEGIN! */
+    
+    font-family: 'Joti One';
+    font-size: 56px;
+    align-items: right;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.startButton:hover{
+    width: 324px;
+    height: 82px;
+    left: calc(50% - 314px/2 - 5px);
+    top: calc(50% - 72px/2 + 180px);
+}
+
+.input{
+    /* Rectangle 13 */
+
+width: 185px;
+height: 31px;
+margin: 10px 0px 15px 10px;
+
+background: #F7F7F7;
+border-radius: 20px;
+border: none;
+padding-left: 20px;
+font-family: "Joti One";
+font-size: 25px;
+
+}
+
+
+/*--------------------------- GAME PAGE ---------------------------*/
+
+
+#turnText{
+position: absolute;
+width: 700px;
+height: 87px;
+left: calc(50% - 369px/2 + 45px);
+top: 36px;
+
+font-family: 'Lobster';
+font-size: 81px;
+display: flex;
+color: #FFFFFF;
+}
+
+.symbol{
+        /* X */
+    position: absolute;
+
+    font-family: 'Luckiest Guy';
+    font-size: 222px;
+    line-height: 32px;
+
+    
+}
+
+#symbolX{
+    left: calc(50% - 206px/2 - 436px);
+    top: calc(50% - 212px/2 + 50px);
+    color: #00FFF0;
+}
+
+#symbolO{
+    left: calc(50% - 206px/2 + 500px);
+    top: calc(50% - 212px/2 + 50px);
+    color: #FFD703;
+}
+
+.gameBox{
+    /* gameBox */
+
+    box-sizing: border-box;
+    padding-left: 40px;
+
+    position: absolute;
+    width: 569px;
+    height: 569px;
+    left: calc(50% - 569px/2 + 2.5px);
+    top: calc(50% - 569px/2 + 50.5px);
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    font-family: 'Luckiest Guy';
+    font-size: 76px;
+    line-height: 116px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.gameBoxRow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.gameMainBox{
+    /* Rectangle 3 */
+
+    width: 130px;
+    height: 130px;
+
+    background: #00316A;
+    border: none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+}
+
+.playerInfoContainer{
+    /* playerInfoContainer */
+    position: absolute;
+    left: 131px;
+    top: 577px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 25px;
+    gap: 700px;
+
+    /* Text */
+
+    font-family: 'Joti One';
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+
+.playerInfo{
+    /* player1Info */
+
+width: 260px;
+height: 130px;
+
+background: #FFD702;
+border-width: 0px 2px 2px 0px;
+border-style: solid;
+border-color: #000000;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+padding-top: 20px;
+}
+
+#restartGame{
+    position: absolute;
+    width: 314px;
+    height: 72px;
+    left: calc(50% - 314px/2);
+    top: calc(50% - 72px/2 + 286px);
+
+    background: #00D3B9;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+    opacity: 0;
+
+    /* BEGIN! */
+    
+    font-family: 'Joti One';
+    font-size: 56px;
+
+    color: #FFFFFF;
+}
+
+#restartGame:hover{
+    width: 324px;
+    height: 82px;
+    left: calc(50% - 317px/2);
+    top: calc(50% - 72px/2 + 281px);
+}
+
+#gameToHome{
+    position: absolute;
+    width: 314px;
+    height: 72px;
+    left: calc(50% + 314px);
+    top: calc(50% - 342px);
+
+    background: #00D3B9;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+
+    /* BEGIN! */
+    
+    font-family: 'Joti One';
+    font-size: 56px;
+
+    color: #FFFFFF;
+}
+
+#gameToHome:hover{
+    width: 324px;
+    height: 82px;
+    left: calc(50% + 309px);
+    top: calc(50% - 347px);
+}

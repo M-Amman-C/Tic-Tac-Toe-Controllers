@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+
+
+    <body>
+        <div id="turnText">X TURN</div>
+        <form method="GET" action="/home">
+            <button id="gameToHome" type="submit">EXIT!</button>
+        </form>
+        <div class="symbol" id="symbolX">X</div>
+        <div class="gameBox">
+            <table>
+            <% for( let i = 0; i < 3; i++ ) { %>
+                <tr>
+                <% for( let j = 0; j < 3; j++ ) { %>
+                    <td><div class="gameMainBox" id=<%= (3*i)+j+1 %>></div></td>
+                <% } %>
+                </tr>
+        <% } %>
+        </table>
+        </div>
+        <div class="symbol" id="symbolO">O</div>
+        <div class="playerInfoContainer">
+            <div id="player1Info" class="playerInfo"><%- player1 %> <br> <%- player1Score %></div>
+            <div id="player2Info" class="playerInfo"><%- player2 %> <br> <%- player2Score %></div>
+        </div>
+        <form method="POST">
+            <input type="hidden" name="winnerId" id="winnerId" value="">
+            <button id="restartGame" type="submit" action="/game">RESTART!</button>
+        </form>
+        <script src="index2.js"></script>
+    </body>
+
+</html>

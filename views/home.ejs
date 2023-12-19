@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+
+
+<body class="homeBg">
+    <div class="title">
+        <div id="T">
+            T
+        </div>
+        <div id="ic">
+            ic
+        </div>
+        <div id="ac">
+            ac
+        </div>
+        <div id="oe">
+            oe
+        </div>
+        <div id="adventures">ADVENTURES</div>
+    </div>
+    <button id="newGameButton">New Game</button>
+    <div id="playerPage">
+        <div>
+            <form method="POST" action="/home" class="playerContent">
+                <button id="playerToHome" type="reset">BACK</button>
+                <div style="margin-top: 100px;">
+                Player-1
+                <input type="text" class="input" name="player1" value="" id="input1" required>
+            </div>
+            <div>
+                Player-2
+                <input type="text" class="input" name="player2" value="" id="input2" required>
+            </div>
+                <button class="startButton" type="submit">BEGIN!</button>
+            </form>
+        </div>
+    </div>
+    <script src="index1.js"></script>
+</body>
+</html>
