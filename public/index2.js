@@ -97,6 +97,7 @@ for (let i = 1; i <= 9; i++) {
         winnerId.value = winner;
         if(turnCount==9 && winner==0){
             turnText.innerHTML = "Draw!!";
+            restartGame.style.opacity = "100%";
         }
       }
     );
