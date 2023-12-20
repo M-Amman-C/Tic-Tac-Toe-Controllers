@@ -370,7 +370,7 @@ padding-top: 20px;
     position: absolute;
     width: 314px;
     height: 72px;
-    left: calc(50% + 314px);
+    left: calc(50% + 354px);
     top: calc(50% - 342px);
 
     background: #00D3B9;
@@ -391,4 +391,12 @@ padding-top: 20px;
     height: 82px;
     left: calc(50% + 309px);
     top: calc(50% - 347px);
+}
+
+#winLine{
+    border: 3px solid red;
+    position: absolute;
+    width: 31%;
+    left: 513px;
+    top: 230px;
 }

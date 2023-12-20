@@ -20,39 +20,49 @@ var winner=0;
 var display;
 
 function checkwin(list){
+    res = []
     if (list.includes(1)){
         if (list.includes(2) && list.includes(3)){
-            return "win";
+            res = [1,2,3];
+            return res;
         } else if(list.includes(4) && list.includes(7)){
-            return "win";
+            res = [1,4,7];
+            return res;
         }
         else if(list.includes(5) && list.includes(9)){
-            return "win";
+            res = [1,5,9];
+            return res;
         }
     }
     if(list.includes(2)){
         if (list.includes(5) && list.includes(8)){
-            return "win";
+            res = [2,5,8];
+            return res;
         }
     }
     if(list.includes(3)){
         if (list.includes(6) && list.includes(9)){
-            return "win";
+            res = [3,6,9];
+            return res;
         }
         if(list.includes(5) && list.includes(7)){
-            return "win";
+            res = [3,5,7];
+            return res;
         }
     }
     if(list.includes(4)){
         if (list.includes(5) && list.includes(6)){
-            return "win";
+            res = [4,5,6];
+            return res;
         }
     }
     if(list.includes(7)){
         if (list.includes(8) && list.includes(9)){
-            return "win";
+            res = [7,8,9];
+            return res;
         }
     }
+    return res;
 }
 
 for (let i = 1; i <= 9; i++) {
@@ -65,8 +75,7 @@ for (let i = 1; i <= 9; i++) {
             turnCount++;
             player1List.push(i);
             var status = checkwin(player1List);
-            
-            if(status=="win"){
+            if(status.length!=0){
                 winner = 1;
             }
         } else{
@@ -74,9 +83,8 @@ for (let i = 1; i <= 9; i++) {
             turnCount++;
             turnText.innerHTML = "X TURN";
             player2List.push(i);
-            checkwin(player2List);
             var status = checkwin(player2List);
-            if(status=="win"){
+            if(status.length!=0){
                 winner = 2;
             }
         }
@@ -92,6 +100,11 @@ for (let i = 1; i <= 9; i++) {
         if(winner!=0){
             turnText.style.left = "500px";
             restartGame.style.opacity = "100%";
+        }
+        if(status.length!=0){
+            for (id in status){
+                document.getElementById(status[id]).style.backgroundColor = "red";
+            }
         }
         turnText.innerHTML = display;
         winnerId.value = winner;
