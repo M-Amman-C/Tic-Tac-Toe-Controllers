@@ -70,6 +70,7 @@ for (let i = 1; i <= 9; i++) {
       "click", 
       ()=>{
         document.getElementById(i.toString()).innerHTML = currSymbol;
+        document.getElementById(i.toString()).style.pointerEvents = "none";
         if (turnCount%2==0){
             currSymbol = "O";
             turnCount++;
