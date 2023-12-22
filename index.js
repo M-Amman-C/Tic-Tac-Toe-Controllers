@@ -12,7 +12,7 @@ var player2 = "";
 var player1Score = 0;
 var player2Score = 0;
 
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
     player1 = "";
     player2 = "";
     player1Score = 0;
@@ -20,7 +20,7 @@ app.get("/home",(req,res)=>{
     res.render("home.ejs");
 });
 
-app.post("/home",(req,res)=>{
+app.post("/",(req,res)=>{
     player1 = req.body.player1;
     player2 = req.body.player2;
     res.redirect("/game");
