@@ -2,11 +2,21 @@ import express from "express";
 import bodyParser from "body-parser";
 import ejs from "ejs"; 
 
+import path from 'path';
+import {fileURLToPath} from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+console.log(__filename)
+const __dirname = path.dirname(__filename);
+console.log(__dirname)
+
 const app = express();
 const port = 9001;
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
 var player1 = "";
 var player2 = "";
